@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-10-23 21:14+0200\n"
+"PO-Revision-Date: 2019-10-23 21:57+0200\n"
 "Language-Team: \n"
 "X-Generator: Poedit 2.2.4\n"
 "Last-Translator: \n"
@@ -156,14 +156,18 @@ msgid ""
 "Theme</em>. Instead try turning me into the next, most awesome, WordPress "
 "theme out there. That's what I'm here for."
 msgstr ""
+"Hoi, ik ben het startthema genaamd <code>_s</code>, of <em>lage streepjes</"
+"em>, zo u wil. Ik ben een thema wat aangepast moet worden dus gebruik mij "
+"niet als een <em>Ouderthema</em>. Probeer mij in plaats daarvan in een "
+"nieuw, mooi Wordpressthema te veranderen. Daar ben ik voor."
 
 #. Author of the plugin/theme
 msgid "Automattic"
-msgstr ""
+msgstr "Automattic"
 
 #. Author URI of the plugin/theme
 msgid "https://automattic.com/"
-msgstr ""
+msgstr "https://automattic.com/"
 
 #. translators: 1: comment count number, 2: title.
 #: comments.php:40
