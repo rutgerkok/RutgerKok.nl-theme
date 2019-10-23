@@ -398,8 +398,7 @@ optgroup,
 textarea {
 	color: #404040;
 	font-family: Garamond, Georgia, 'Times New Roman', Times, serif;
-	font-size: 16px;
-	font-size: 1rem;
+	font-size: 1.1rem;
 	line-height: 1.5;
 }
 
@@ -615,15 +614,18 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: inherit;
+	text-decoration: none;
+	border-bottom: 0.2em solid #bad3e9;
 }
 
 a:visited {
-	color: purple;
+	color: inherit;
 }
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	color: #ff7675;
+	border-bottom: .2em solid #ff7675;
 }
 
 a:focus {
@@ -654,8 +656,7 @@ a:hover, a:active {
 	padding: 0;
 }
 .site-title a {
-	text-decoration: none;
-	color: black;
+	border-bottom: none;
 }
 @media screen and (min-width: 44em) {
 	.site-title {
@@ -715,7 +716,11 @@ a:hover, a:active {
 
 .main-navigation a {
 	display: block;
-	text-decoration: none;
+	border-bottom: none;
+}
+
+.main-navigation a:hover {
+	color: #ff7675;
 }
 
 .main-navigation ul li a {
@@ -955,6 +960,11 @@ object {
 /* Make sure logo link wraps around logo image. */
 .custom-logo-link {
 	display: inline-block;
+}
+
+/* Remove border of links in cover text on images. */
+.wp-block-cover-text a {
+	border-bottom: none;
 }
 
 /*--------------------------------------------------------------
