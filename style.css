@@ -1,9 +1,9 @@
 /*!
-Theme Name: RutgerKok
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
+Theme Name: Rutger Kok
+Theme URI: https://rutgerkok.nl/
+Author: Rutger Kok
+Author URI: https://rutgerkok.nl/
+Description: Simpel thema met schreeflettertype.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -651,10 +651,10 @@ p a:hover, a.more-link:hover, p a:focus, a.more-link:hover, p a:active, a.more-l
 #masthead {
 	margin: 2em 2em 0 2em;
 }
-@media screen and (min-width: 44em) {
+@media screen and (min-width: 44rem) {
 	#masthead {
 		margin: 2em auto 0 auto;
-		max-width: 40em;
+		max-width: 40rem;
 	}
 }
 .site-title {
@@ -679,6 +679,12 @@ p a:hover, a.more-link:hover, p a:focus, a.more-link:hover, p a:active, a.more-l
 	display: block;
 	float: left;
 	width: 100%;
+}
+
+@media print {
+	.main-navigation {
+		display: none;
+	}
 }
 
 .main-navigation ul {
@@ -883,13 +889,13 @@ p a:hover, a.more-link:hover, p a:focus, a.more-link:hover, p a:active, a.more-l
 # Content
 --------------------------------------------------------------*/
 
-#content {
-	margin: 0 0 2em 0;
+#content, .site-info {
+	margin: 1em 2em 2em 2em;
 }
-@media screen and (min-width: 44em) {
-	#content {
-		margin: 0 auto 2em auto;
-		max-width: 40em;
+@media screen and (min-width: 44rem) {
+	#content, .site-info {
+		margin: 1em auto 2em auto;
+		max-width: 40rem;
 	}
 }
 
