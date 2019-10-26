@@ -399,15 +399,19 @@ textarea {
 	color: #404040;
 	font-family: Garamond, Georgia, 'Times New Roman', Times, serif;
 	font-size: 1.1rem;
-	line-height: 1.5;
+	line-height: 1.4;
 }
 
 h1, h2, h3, h4, h5, h6 {
+	margin: 1em 0 0.2em 0;
 	clear: both;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color: #404040;
 }
 
 p {
-	margin-bottom: 1.5em;
+	margin: 0.2em 0 0.8em 0;
 }
 
 dfn, cite, em, i {
@@ -614,18 +618,12 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: inherit;
+	color: #759dc0;
 	text-decoration: none;
-	border-bottom: 0.2em solid #bad3e9;
-}
-
-a:visited {
-	color: inherit;
 }
 
 a:hover, a:focus, a:active {
 	color: #ff7675;
-	border-bottom: .2em solid #ff7675;
 }
 
 a:focus {
@@ -636,17 +634,26 @@ a:hover, a:active {
 	outline: 0;
 }
 
+/* Give links in paragraphs a bottom border instead */
+p a, a.more-link {
+	color: #404040;
+	border-bottom: 0.2em solid #bad3e9;
+}
+
+p a:hover, a.more-link:hover, p a:focus, a.more-link:hover, p a:active, a.more-link:hover {
+	border-bottom: .2em solid #ff7675;
+}
 
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
 
 #masthead {
-	margin: 2em;
+	margin: 2em 2em 0 2em;
 }
 @media screen and (min-width: 44em) {
 	#masthead {
-		margin: 2em auto;
+		margin: 2em auto 0 auto;
 		max-width: 40em;
 	}
 }
@@ -656,7 +663,7 @@ a:hover, a:active {
 	padding: 0;
 }
 .site-title a {
-	border-bottom: none;
+	color: black;
 }
 @media screen and (min-width: 44em) {
 	.site-title {
@@ -717,6 +724,7 @@ a:hover, a:active {
 .main-navigation a {
 	display: block;
 	border-bottom: none;
+	color: #404040;
 }
 
 .main-navigation a:hover {
@@ -876,11 +884,11 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 
 #content {
-	margin: 2em;
+	margin: 0 0 2em 0;
 }
 @media screen and (min-width: 44em) {
 	#content {
-		margin: 2em auto;
+		margin: 0 auto 2em auto;
 		max-width: 40em;
 	}
 }
@@ -894,7 +902,7 @@ a:hover, a:active {
 
 .post,
 .page {
-	margin: 0 0 1.5em;
+	margin: 0 0 2.5em;
 }
 
 .updated:not(.published) {
@@ -904,7 +912,19 @@ a:hover, a:active {
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+	margin: 0;
+}
+
+.entry-meta {
+	color: #aaa;
+	margin: 0 0 0.5em 0;
+}
+.entry-footer {
+	margin-top: 1em;
+	color: #aaa;
+}
+.entry-footer span:not(:last-child)::after {
+	content: " / ";
 }
 
 .page-links {
