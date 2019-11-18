@@ -978,6 +978,11 @@ object {
 	border-bottom: none;
 }
 
+/* Reset margins for lists that are used as grids. */
+ul.is-grid, ol.is-grid {
+	margin: 0;
+}
+
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
