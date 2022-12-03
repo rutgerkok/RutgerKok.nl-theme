@@ -390,6 +390,7 @@ template {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+
 body,
 button,
 input,
@@ -399,7 +400,18 @@ textarea {
 	color: #404040;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 1.1rem;
-	line-height: 1.5;
+	line-height: 1.6;
+}
+
+body {
+	text-align: justify;
+	hyphens: auto;
+}
+
+input, select, optgroup, textarea, .is-grid {
+	/* Don't let the browser mess with this text too much */
+	text-align: left;
+	hyphens: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -419,7 +431,13 @@ dfn, cite, em, i {
 }
 
 blockquote {
-	margin: 0 1.5em;
+	border-left: 10px solid #666;
+	margin: 1.5em 0;
+	padding: 0.5em 0 0.5em 1.5em;
+}
+
+blockquote cite {
+	font-size: smaller;
 }
 
 address {
@@ -520,6 +538,11 @@ img {
 figure {
 	margin: 1em 0;
 	/* Extra wide images within figure tags don't overflow the content area. */
+}
+
+figcaption {
+	font-size: smaller;
+	color: #aaa;
 }
 
 table {
@@ -745,6 +768,7 @@ p a:hover, a.more-link:hover, p a:focus, a.more-link:hover, p a:active, a.more-l
 .posts-navigation, .site-main
 .post-navigation {
 	margin: 0 0 1.5em;
+	font-size: smaller;
 	overflow: hidden;
 }
 
@@ -908,10 +932,12 @@ p a:hover, a.more-link:hover, p a:focus, a.more-link:hover, p a:active, a.more-l
 
 .entry-meta {
 	color: #aaa;
-	margin: 0 0 0.5em 0;
+	font-size: smaller;
+	margin: 0 0 1.5em 0;
 }
 .entry-footer {
 	margin-top: 1em;
+	font-size: smaller;
 	color: #aaa;
 }
 .entry-footer span:not(:last-child)::after {
